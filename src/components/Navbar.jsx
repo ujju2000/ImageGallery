@@ -38,7 +38,7 @@ export default function Navbar() {
     <Box  sx = {{}}>
       <AppBar position ='static' sx  = {{  bgcolor : themeMode === 'light' ? 'white' : 'black', color : themeMode === 'light' ? 'black' : 'white',  fontFamily : 'Montserrat' }}>
         <Toolbar sx = {{   display : 'flex' , justifyContent : 'space-between' ,  alignItems : 'center'}}>  
-            <Typography variant = 'h4' sx = {{ fontFamily : 'Pattaya , sans-serif', fontSize : 30}}>
+            <Typography variant = 'h4' sx = {{ fontFamily : 'Pattaya , sans-serif', fontSize : {xs : 15 , md: 30}}}>
                 Image Gallery
             </Typography>
 

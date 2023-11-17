@@ -18,17 +18,17 @@ export default function SearchImageBar() {
     setInput(e.target.value)
   }
   return (
-    <Box className = 'search-image-bar' sx = {{fontFamily : 'Montserrat'}}>
+    <Box className = 'search-image-bar' sx = {{fontFamily : 'Montserrat' , p:2}}>
     <Typography variant = 'h2' sx = {{fontSize : 32 , fontWeight : 700, my:1 }}>Download High Quality images by creaters</Typography>
     <Typography variant = 'subtitle' sx = {{fontSize : 14 , fontWeight : 500 , my: 1}}>Over 2.4 million+ stock images by our talented community</Typography>
-    <Box sx= {{display :'flex' , border : '2px solid #ECECEC' , width  :'600px' ,height : '40px' ,  bgcolor : '#FAFAFA' , borderRadius : '6px'}}  elevation = {2}>
+    <Box sx= {{display :'flex' , border : '2px solid #ECECEC' , width  : {xs : '90%' , sm: '600px'} ,height : '40px' ,  bgcolor : '#FAFAFA' , borderRadius : '6px'}}  elevation = {2}>
       <IconButton>
           <SearchIcon size = {20} />
       </IconButton>
       <Input 
         placeholder="Search high resolution Images, categories, wallpapers" 
-        variant="outlined" fullWidth = 'true' autoFocus = 'false' 
-        sx = {{fontWeight : 500 , fontSize : 14}}
+        variant="outlined"  autoFocus = 'false' fullWidth = "true"
+        sx = {{fontWeight : 500 , fontSize : 14 }}
           onChange = {handleChange}
         />
     </Box>
