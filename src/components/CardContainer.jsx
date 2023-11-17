@@ -23,7 +23,7 @@ export default function CardContainer({data}) {
         >
             <img src ={`${imageUrl}&fit=crop&auto=format}`} />
         </ImageListItem>
-        <CardContent sx = {{display : 'flex' ,alignItems : 'center'}}>
+        <CardContent sx = {{display : {xs : 'none' , sm: 'flex'} ,alignItems : 'center'}}>
             <Avatar src = {profileImageUrl} />
               <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', ml: 1 }}>
 
